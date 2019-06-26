@@ -1,0 +1,42 @@
+@import "base";
+
+.component {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: $header-height;
+  background-color: #1b1b1b;
+  color: #999999;
+  z-index: 50;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 200;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.navigationItem {
+  display: block;
+  text-decoration: none;
+  line-height: $header-height;
+  color: inherit;
+  padding: 0 .5em;
+}

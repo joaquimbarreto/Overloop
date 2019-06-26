@@ -1,0 +1,19 @@
+@import "base";
+@import '~sanitize.css';
+
+:global {
+  html {
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+.component {
+  // Empty.
+}
+
+.content {
+  margin-top: ($header-height + $mobile-side-padding);
+}

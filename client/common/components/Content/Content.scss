@@ -1,0 +1,9 @@
+@import 'base';
+
+.component {
+  max-width: $view-max-width;
+  padding: 0 $mobile-side-padding;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}

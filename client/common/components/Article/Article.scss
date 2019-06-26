@@ -1,0 +1,27 @@
+@import "base";
+
+.component {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $color-border;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.title {
+  font-size: 20px;
+  color: $color-primary;
+  text-decoration: none;
+}
+
+.date {
+  color: $color-subtext;
+  font-size: 12px;
+  margin: .4em 0;
+}
+
+.content {
+
+}

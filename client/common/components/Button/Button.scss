@@ -1,0 +1,78 @@
+@import "base";
+
+$color-primary-hover: darken($color-primary, 3%);
+$color-secondary-hover: darken($color-secondary, 3%);
+$color-error-hover: darken($color-red, 3%);
+
+.component {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  -webkit-appearance: none;
+  padding: .8em 1em;
+  cursor: pointer;
+  background: darken($color-light-bg, 5%) none;
+  color: $color-subtext;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: normal;
+  user-select: none;
+  transition: opacity 120ms;
+  border-radius: 0;
+
+  &:hover {
+    background-color: darken($color-light-bg, 8%);
+  }
+}
+
+.disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.primary {
+  color: white;
+  background: $color-primary;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.secondary {
+  color: white;
+  background: $color-secondary;
+
+  &:hover {
+    background-color: $color-secondary-hover;
+  }
+}
+
+.error {
+  color: white;
+  background: $color-red;
+
+  &.bordered {
+    box-shadow: inset 0 0 0 2px $color-red;
+    background: none transparent;
+    color: $color-red;
+
+    &:hover {
+      box-shadow: inset 0 0 0 2px $color-error-hover;
+      color: white;
+    }
+  }
+
+  &:hover {
+    background-color: $color-error-hover;
+  }
+}

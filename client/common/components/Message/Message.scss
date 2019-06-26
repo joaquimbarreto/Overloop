@@ -1,0 +1,36 @@
+@import 'base';
+
+.component {
+  padding: 1em;
+  border: 1px solid $color-border;
+  background-color: $color-light-bg;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: .5em;
+}
+
+.content {
+}
+
+.error {
+  border-color: lighten($color-red, 20%);
+  color: $color-red;
+  background-color: lighten($color-red, 34%);
+
+  .title {
+    color: $color-red;
+  }
+}
+
+.success {
+  border-color: lighten($color-green, 20%);
+  color: $color-green;
+  background-color: lighten($color-green, 44%);
+
+  .title {
+    color: $color-green;
+  }
+}

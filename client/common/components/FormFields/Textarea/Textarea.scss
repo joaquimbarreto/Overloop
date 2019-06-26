@@ -1,0 +1,35 @@
+@import "base";
+
+.component {
+  @include input-style();
+
+  resize: none;
+  line-height: 1.7;
+}
+
+.error {
+  margin-top: .3em;
+
+  small {
+    color: $color-red;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.hasError {
+  border-color: $color-red !important;
+}
+
+.isRequired {
+  .label {
+    &:after {
+      display: inline;
+      color: red;
+      content: '*';
+      margin-left: .15em;
+    }
+  }
+}

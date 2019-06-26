@@ -1,0 +1,40 @@
+@import "base";
+
+:global {
+  // Remove ugly chrome yellow autofill background
+  input:-webkit-autofill,
+  textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+  }
+}
+
+.component {
+  @include input-style();
+}
+
+.error {
+  margin-top: .3em;
+
+  small {
+    color: $color-red;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.hasError {
+  border-color: $color-red !important;
+}
+
+.required {
+  .label {
+    &:after {
+      display: inline;
+      color: red;
+      content: '*';
+      margin-left: .15em;
+    }
+  }
+}

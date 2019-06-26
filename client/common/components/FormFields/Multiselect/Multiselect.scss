@@ -1,0 +1,32 @@
+@import "base";
+
+.component {
+  :global {
+    .rw-multiselect {
+      border-color: $color-border;
+
+      .rw-widget-input,
+      .rw-filter-input {
+        box-shadow: none !important;
+      }
+
+      .rw-widget-container {
+        border-color: $color-border;
+        border-radius: 0;
+      }
+
+      .rw-multiselect-tag {
+        border-radius: 0;
+
+        span {
+          font-weight: normal;
+        }
+      }
+
+      .rw-list-option {
+        font-weight: normal;
+        padding: .4em;
+      }
+    }
+  }
+}
