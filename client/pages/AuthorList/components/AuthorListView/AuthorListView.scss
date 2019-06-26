@@ -1,0 +1,21 @@
+@import "base";
+
+.component {
+
+}
+
+.controls {
+  margin-bottom: 2em;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  font-size: 2rem;
+}
+
+.empty {
+  color: $color-subtext;
+}

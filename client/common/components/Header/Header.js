@@ -7,16 +7,15 @@ import Content from 'common/components/Content'
 const Header = () => (
   <div className={styles.component}>
     <Content className={styles.content}>
-      <Link
-        to={Routes.ARTICLES}
-        className={styles.logo}>
+      <Link to={Routes.ARTICLES} className={styles.logo}>
         Overloop
       </Link>
       <div className={styles.navigation}>
-        <Link
-          className={styles.navigationItem}
-          to={Routes.ARTICLES}>
+        <Link className={styles.navigationItem} to={Routes.ARTICLES}>
           Articles
+        </Link>
+        <Link className={styles.navigationItem} to={Routes.AUTHORS}>
+          Authors
         </Link>
       </div>
     </Content>
