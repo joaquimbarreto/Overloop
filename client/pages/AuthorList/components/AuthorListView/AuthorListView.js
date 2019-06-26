@@ -19,7 +19,7 @@ const AuthorListView = ({ authors, isLoaded }) => {
   const content = isLoaded ? (
     authors.size === 0 ? (
       <div className={styles.empty}>
-        No authors yet, let's create one first ;
+        No authors yet, let's create one first.
       </div>
     ) : (
       sortedAuthors

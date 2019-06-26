@@ -4,9 +4,9 @@ import { Field, reduxForm } from 'redux-form'
 import { Input } from 'common/components/FormFields'
 import Button from 'common/components/Button'
 import FormGroup from 'common/components/FormGroup'
-import styles from './ArticleForm.scss'
+import styles from './AuthorForm.scss'
 
-export const AUTHOR_ID = 'name'
+export const AUFORM_ID = 'author'
 
 export const validate = values => {
   const errors = {}
@@ -42,6 +42,6 @@ AuthorForm.propTypes = {
 }
 
 export default reduxForm({
-  author: AUTHOR_ID,
+  auForm: AUFORM_ID,
   validate
 })(AuthorForm)

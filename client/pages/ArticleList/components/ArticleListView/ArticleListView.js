@@ -19,7 +19,7 @@ const ArticleListView = ({ articles, isLoaded }) => {
   const content = isLoaded ? (
     articles.size === 0 ? (
       <div className={styles.empty}>
-        No articles yet, let's create one first ;
+        No articles yet, let's create one first.
       </div>
     ) : (
       sortedArticles

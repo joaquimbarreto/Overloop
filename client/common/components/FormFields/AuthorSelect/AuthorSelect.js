@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Multiselect from '../Multiselect'
 import Loader from 'common/components/Loader'
-import { getAuthors } from 'api/authors'
+import { getAllAuthors } from 'api/authors'
 
 export default class AuthorSelect extends Component {
   static propTypes = {
@@ -15,7 +15,7 @@ export default class AuthorSelect extends Component {
   }
 
   loadAuthors () {
-    getAuthors().then(authors => {
+    getAllAuthors().then(authors => {
       this.setState({
         authors,
         isLoaded: true
