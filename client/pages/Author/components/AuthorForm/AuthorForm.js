@@ -42,6 +42,6 @@ AuthorForm.propTypes = {
 }
 
 export default reduxForm({
-  auForm: AUFORM_ID,
+  form: AUFORM_ID,
   validate
 })(AuthorForm)

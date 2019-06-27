@@ -8,13 +8,13 @@ import * as Routes from 'constants/Routes'
 import { Link, formatPattern } from 'react-router'
 import Loader from 'common/components/Loader'
 
-const sortAuthors = authors =>
-  authors.sort((a, b) => {
-    return new Date(b.get('created')) - new Date(a.get('created'))
-  })
+// const sortAuthors = authors =>
+//   authors.sort((a, b) => {
+//     return new Date(b.get('created')) - new Date(a.get('created'))
+//   })
 
 const AuthorListView = ({ authors, isLoaded }) => {
-  const sortedAuthors = sortAuthors(authors)
+  // const sortedAuthors = sortAuthors(authors)
 
   const content = isLoaded ? (
     authors.size === 0 ? (
@@ -22,9 +22,7 @@ const AuthorListView = ({ authors, isLoaded }) => {
         No authors yet, let's create one first.
       </div>
     ) : (
-      sortedAuthors
-        .valueSeq()
-        .map(a => <Author author={a} key={a.get('_id')} />)
+      authors.valueSeq().map(a => <Author author={a} key={a.get('_id')} />)
     )
   ) : (
     <div className={styles.loader}>
