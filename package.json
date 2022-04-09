@@ -83,7 +83,7 @@
     "iplocation": "^5.0.0",
     "iso-countries": "0.0.5",
     "lodash": "^4.17.5",
-    "moment": "^2.21.0",
+    "moment": "^2.29.2",
     "mongoose": "^5.0.10",
     "normalizr": "^3.2.4",
     "react": "^16.2.0",
