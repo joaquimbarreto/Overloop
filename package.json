@@ -73,7 +73,7 @@
     "webpack-hot-middleware": "^2.21.0"
   },
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^2.6.4",
     "babel-polyfill": "^6.26.0",
     "body-parser": "^1.18.2",
     "classnames": "^2.2.5",
