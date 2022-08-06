@@ -84,7 +84,7 @@
     "iso-countries": "0.0.5",
     "lodash": "^4.17.5",
     "moment": "^2.21.0",
-    "mongoose": "^5.0.10",
+    "mongoose": "^5.7.5",
     "normalizr": "^3.2.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
