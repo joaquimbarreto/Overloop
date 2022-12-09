@@ -78,7 +78,7 @@
     "body-parser": "^1.18.2",
     "classnames": "^2.2.5",
     "cors": "^2.8.4",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "immutable": "^3.8.2",
     "iplocation": "^5.0.0",
     "iso-countries": "0.0.5",
